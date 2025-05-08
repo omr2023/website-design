@@ -1,0 +1,125 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+    background-color: #3aceff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  #root {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  input{
+    outline: none;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  
+  button {
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .weather-info {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: left;
+  }
+  
+  .weather-info h2 {
+    margin-top: 0;
+    color: #555;
+  }
+  
+  .weather-info p {
+    margin-bottom: 8px;
+  }
+  
+  .error-message {
+    margin-top: 20px;
+    color: red;
+    font-weight: bold;
+  }
+  .wind{
+    transition: 0.12s;
+    color: #281730;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .forecast {
+    margin-top: 30px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+  }
+  
+  .forecast h2 {
+    color: #555;
+    margin-bottom: 15px;
+  }
+  
+  .forecast-day {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 4px;
+  }
+  
+  .forecast-day h3 {
+    color: #777;
+    margin-top: 0;
+    margin-bottom: 10px;
+  }
+  
+  .forecast-items {
+    display: flex;
+    overflow-x: auto; /* للسماح بالتمرير الأفقي إذا كانت هناك توقعات كثيرة في يوم واحد */
+    gap: 15px;
+    padding-top: 10px;
+  }
+  
+  .forecast-item {
+    flex: 0 0 auto; /* عدم السماح للعناصر بالتمدد أو الانكماش بشكل كبير */
+    text-align: center;
+  }
+  
+  .forecast-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+  }
+  
+  .forecast-item p {
+    margin-bottom: 5px;
+    font-size: 0.9em;
+  }
